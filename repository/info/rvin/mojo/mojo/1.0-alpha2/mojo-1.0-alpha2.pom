@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>info.rvin.mojo</groupId>
+	<artifactId>mojo</artifactId>
+	<version>1.0-alpha2</version>
+
+	<packaging>pom</packaging>
+
+	<name>Flex Mojos</name>
+	<url>http://code.google.com/p/flex-mojos</url>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<developers>
+		<developer>
+			<id>velo.br</id>
+			<name>Marvin Herman Froeder</name>
+			<email>velo.br at gmail.com</email>
+			<roles>
+				<role>Author Developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		</developer>
+	</developers>
+
+	<issueManagement>
+		<url>http://code.google.com/p/flex-mojos/issues/list</url>
+	</issueManagement>
+
+	<licenses>
+		<license>
+			<name>LGPL License.</name>
+			<url>http://www.gnu.org/copyleft/lesser.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:svn:http://flex-mojos.googlecode.com/svn/tags/mojo-1.0-alpha2</connection>
+		<developerConnection>scm:svn:https://flex-mojos.googlecode.com/svn/tags/mojo-1.0-alpha2</developerConnection>
+		<url>http://code.google.com/p/flex-mojos/source/browse/tags/mojo-1.0-alpha2</url>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<url>../repository</url>
+		</repository>
+	</distributionManagement>
+
+	<modules>
+		<module>flex-mojo</module>
+		<!-- cant release <module>flex-mojo-IT</module>  -->
+		<module>flex-support</module>
+		<module>air-support</module>
+	</modules>
+
+</project>

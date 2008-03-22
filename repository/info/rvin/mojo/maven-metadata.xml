@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <plugins>
+    <plugin>
+      <name>Flex Compiler Maven Mojo</name>
+      <prefix>flex-compiler-mojo</prefix>
+      <artifactId>flex-compiler-mojo</artifactId>
+    </plugin>
+  </plugins>
+</metadata>
