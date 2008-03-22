@@ -13,8 +13,8 @@
 		</dependency>
 		<dependency>
 			<groupId>com.adobe.blazeds</groupId>
-			<artifactId>flex-messaging-common</artifactId>
-			<version>beta1</version>
+                        <artifactId>blazeds-common</artifactId>
+                        <version>1.0-beta1</version>
 		</dependency>
 		<dependency>
 			<groupId>macromedia</groupId>
