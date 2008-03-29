@@ -5,5 +5,10 @@
       <prefix>flex-compiler-mojo</prefix>
       <artifactId>flex-compiler-mojo</artifactId>
     </plugin>
+    <plugin>
+      <name>AsDoc Maven Mojo</name>
+      <prefix>asdoc</prefix>
+      <artifactId>asdoc</artifactId>
+    </plugin>
   </plugins>
 </metadata>
