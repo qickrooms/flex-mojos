@@ -6,8 +6,8 @@ Need to add this on pom.xml in order to download flex-mojos dependencies
 
 
 = Details =
-
-`<repositories>
+{{{
+<repositories>
 	<repository>
 		<id>flex-mojos-repository</id>
 		<url>http://flex-mojos.googlecode.com/svn/trunk/repository/</url>
@@ -15,4 +15,5 @@ Need to add this on pom.xml in order to download flex-mojos dependencies
 			<enabled>true</enabled>
 		</releases>
 	</repository>
-</repositories>`
+</repositories>
+}}}
