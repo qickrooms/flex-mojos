@@ -1,0 +1,60 @@
+{{{
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML header, nothing new -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+        <!-- pom.xml model version -->
+	<modelVersion>4.0.0</modelVersion>
+
+        <!-- Inherit from flex-mojos flex super pom
+            This enable maven to compile, asdoc, ... without writing <plugins> on <build>
+        -->
+	<parent>
+		<groupId>info.rvin.mojo</groupId>
+		<artifactId>flex-super-pom</artifactId>
+		<version>1.0-beta1</version>
+	</parent>
+
+        <!-- this project ID -->
+	<groupId>com.adobe.sample</groupId>
+	<artifactId>dashboard</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>Dashboar</name>
+
+        <!-- What will be generated.
+            Must be swf, swc, aswf or aswc
+            swf and swc for flex
+            aswf and aswc for air
+        -->
+	<packaging>swf</packaging>
+
+        <!-- this project don't follow the standard directory structure, so, need to specify where are the sources -->
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+	</build>
+
+        <!-- where to get the compiler, maven will look at this repository and download required files -->
+	<repositories>
+		<repository>
+			<id>flex-mojos-repository</id>
+			<url>http://flex-mojos.googlecode.com/svn/trunk/repository/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+	</repositories>
+
+        <!-- dependency to datavisualization.swc
+            the others swcs (framework.swc, playerglobal.swc, ...) are all take by flex-mojos flex super pom Inherit
+        -->
+	<dependencies>
+		<dependency>
+			<groupId>com.adobe.flex.sdk</groupId>
+			<artifactId>datavisualization</artifactId>
+			<version>3.0.0.3.0.0.477</version>
+			<type>swc</type>
+		</dependency>
+	</dependencies>
+
+</project>
+}}}
