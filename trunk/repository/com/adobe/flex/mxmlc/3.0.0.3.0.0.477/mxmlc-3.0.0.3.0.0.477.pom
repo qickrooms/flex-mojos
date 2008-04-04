@@ -11,12 +11,12 @@
 			<artifactId>swfkit</artifactId>
 			<version>3.0.0</version>
 		</dependency>
-		<dependency>
-			<groupId>com.adobe.blazeds</groupId>
-                        <artifactId>blazeds-common</artifactId>
-                        <version>1.0-beta1</version>
-		</dependency>
-		<dependency>
+                <dependency>
+                    <groupId>com.adobe.blazeds</groupId>
+                    <artifactId>blazeds-common</artifactId>
+                    <version>1.0-beta1</version>
+                </dependency> 
+                <dependency>
 			<groupId>macromedia</groupId>
 			<artifactId>asc</artifactId>
 			<version>1.0</version>
