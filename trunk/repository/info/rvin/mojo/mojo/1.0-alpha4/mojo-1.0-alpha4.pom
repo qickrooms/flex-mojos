@@ -80,4 +80,17 @@
 		<module>super-poms/air</module>
 	</modules>
 
+	<repositories>
+		<repository>
+			<id>flex-mojos-repository</id>
+			<url>http://flex-mojos.googlecode.com/svn/trunk/repository/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
 </project>
