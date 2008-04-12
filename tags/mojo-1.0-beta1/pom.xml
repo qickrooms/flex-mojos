@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>info.rvin.mojo</groupId>
+	<artifactId>mojo</artifactId>
+	<version>1.0-beta1</version>
+
+	<packaging>pom</packaging>
+
+	<name>Flex Mojos</name>
+	<url>http://code.google.com/p/flex-mojos</url>
+
+	<prerequisites>
+		<maven>2.0.7</maven>
+	</prerequisites>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>flex-mojos-repository</id>
+			<url>http://flex-mojos.googlecode.com/svn/trunk/repository/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<developers>
+		<developer>
+			<id>velo.br</id>
+			<name>Marvin Herman Froeder</name>
+			<email>velo.br at gmail.com</email>
+			<roles>
+				<role>Author Developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		</developer>
+	</developers>
+
+	<issueManagement>
+		<url>http://code.google.com/p/flex-mojos/issues/list</url>
+	</issueManagement>
+
+	<licenses>
+		<license>
+			<name>LGPL License.</name>
+			<url>http://www.gnu.org/copyleft/lesser.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:svn:http://flex-mojos.googlecode.com/svn/tags/mojo-1.0-beta1</connection>
+		<developerConnection>scm:svn:https://flex-mojos.googlecode.com/svn/tags/mojo-1.0-beta1</developerConnection>
+		<url>http://code.google.com/p/flex-mojos/source/browse/tags/mojo-1.0-beta1</url>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<url>../repository</url>
+		</repository>
+	</distributionManagement>
+
+	<modules>
+		<module>utils</module>
+
+		<module>compiler-mojo</module>
+		<module>asdoc-mojo</module>
+		<module>flex-builder-mojo</module>
+		<module>source-mojo</module>
+
+		<module>super-poms/flex</module>
+		<module>super-poms/air</module>
+
+		<!-- cant release 
+		<module>flex-mojo-IT</module>-->
+	</modules>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<configuration>
+					<targetJdk>1.5</targetJdk>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-plugin-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</reporting>
+
+</project>
