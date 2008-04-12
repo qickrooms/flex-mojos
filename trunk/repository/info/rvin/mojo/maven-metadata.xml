@@ -10,5 +10,15 @@
       <prefix>asdoc</prefix>
       <artifactId>asdoc</artifactId>
     </plugin>
+    <plugin>
+      <name>Flexbuilder Maven Mojo</name>
+      <prefix>flexbuilder</prefix>
+      <artifactId>flexbuilder</artifactId>
+    </plugin>
+    <plugin>
+      <name>Source Maven Mojo</name>
+      <prefix>source-mojo</prefix>
+      <artifactId>source-mojo</artifactId>
+    </plugin>
   </plugins>
 </metadata>
