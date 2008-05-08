@@ -16,6 +16,11 @@
       <artifactId>flexbuilder</artifactId>
     </plugin>
     <plugin>
+      <name>AS3 Generator Maven Mojo</name>
+      <prefix>generator-mojo</prefix>
+      <artifactId>generator-mojo</artifactId>
+    </plugin>
+    <plugin>
       <name>Source Maven Mojo</name>
       <prefix>source-mojo</prefix>
       <artifactId>source-mojo</artifactId>
