@@ -6,24 +6,24 @@
       <artifactId>flex-compiler-mojo</artifactId>
     </plugin>
     <plugin>
+      <name>Encrypter Maven Mojo</name>
+      <prefix>encrypter-mojo</prefix>
+      <artifactId>encrypter-mojo</artifactId>
+    </plugin>
+    <plugin>
       <name>AsDoc Maven Mojo</name>
       <prefix>asdoc</prefix>
       <artifactId>asdoc</artifactId>
     </plugin>
     <plugin>
-      <name>Flexbuilder Maven Mojo</name>
-      <prefix>flexbuilder</prefix>
-      <artifactId>flexbuilder</artifactId>
+      <name>Source Maven Mojo</name>
+      <prefix>source-mojo</prefix>
+      <artifactId>source-mojo</artifactId>
     </plugin>
     <plugin>
       <name>AS3 Generator Maven Mojo</name>
       <prefix>generator-mojo</prefix>
       <artifactId>generator-mojo</artifactId>
-    </plugin>
-    <plugin>
-      <name>Source Maven Mojo</name>
-      <prefix>source-mojo</prefix>
-      <artifactId>source-mojo</artifactId>
     </plugin>
   </plugins>
 </metadata>
