@@ -1,3 +1,4 @@
+#summary sample pom.xml used to build Dashboard sample, see http://blog.flex-mojos.info/2008/03/29/more-them-a-hello-world/
 {{{
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- XML header, nothing new -->
