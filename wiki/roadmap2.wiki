@@ -28,3 +28,4 @@ This is equivalent to using the <code>actionscript-file-encoding</code> option o
 == New mojos ==
   * Generation of optimised RSLs (http://code.google.com/p/flex-mojos/issues/detail?id=34)
   * archetypes mojos
+  * AIR mojos with all ´ADT´ functionality to package an air application
