@@ -8,6 +8,12 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.adobe.flex</groupId>
+			<artifactId>license</artifactId>
+			<version>3.0.0.3.0.0.477</version>
+                        <optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.flex</groupId>
 			<artifactId>compc</artifactId>
 			<version>3.0.0.3.0.0.477</version>
 		</dependency>
