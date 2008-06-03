@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>info.rvin.mojo</groupId>
+	<artifactId>mojo</artifactId>
+	<version>1.0-RC3</version>
+
+	<packaging>pom</packaging>
+
+	<name>Flex Mojos</name>
+	<url>http://docs.flex-mojos.info</url>
+	<organization>
+		<name>Flex-Mojos</name>
+		<url>http://www.flex-mojos.info</url>
+	</organization>
+
+	<prerequisites>
+		<maven>2.0.7</maven>
+	</prerequisites>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>flex-mojos-repository</id>
+			<url>http://flex-mojos.googlecode.com/svn/trunk/repository/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<developers>
+		<developer>
+			<id>velo.br</id>
+			<name>Marvin Herman Froeder</name>
+			<email>velo.br at gmail.com</email>
+			<roles>
+				<role>Author Developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		</developer>
+		<developer>
+			<id>joost</id>
+			<name>Joost den Boer</name>
+			<email>jdboer at e-id.nl</email>
+			<url>http://joost.claroquesi.info</url>
+			<organization>E-id! Internet Strategies B.V.</organization>
+			<organizationUrl>http://www.e-id.nl</organizationUrl>
+			<roles>
+				<role>Developer Documentation</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+		<developer>
+			<id>logan</id>
+			<name>Logan Allred</name>
+			<email>RedBugz at gmail.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>-5</timezone>
+		</developer>
+	</developers>
+
+	<issueManagement>
+		<url>http://code.google.com/p/flex-mojos/issues/list</url>
+	</issueManagement>
+
+	<licenses>
+		<license>
+			<name>LGPL License.</name>
+			<url>http://www.gnu.org/copyleft/lesser.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:svn:http://flex-mojos.googlecode.com/svn/tags/mojo-1.0-RC3</connection>
+		<developerConnection>scm:svn:https://flex-mojos.googlecode.com/svn/tags/mojo-1.0-RC3</developerConnection>
+		<url>http://code.google.com/p/flex-mojos/source/browse/tags/mojo-1.0-RC3</url>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>maven.flex-mojos.info</id>
+			<name>Flex-Mojos Release Repository</name>
+			<url>scp://repository.flex-mojos.info/www/flex-mojos/repository</url>
+		</repository>
+		<snapshotRepository>
+			<id>maven.flex-mojos.info</id>
+			<name>Flex-Mojos Snapshot Repository</name>
+			<url>scp://snapshot.flex-mojos.info/www/flex-mojos/snapshot</url>
+		</snapshotRepository>
+		<site>
+			<id>maven.flex-mojos.info</id>
+			<name>Flex-Mojos Plugin Documentation Site</name>
+			<url>scp://docs.flex-mojos.info/www/flex-mojos/docs</url>
+		</site>
+	</distributionManagement>
+
+	<mailingLists>
+		<mailingList>
+			<name>Flex-mojos Google Group</name>
+			<unsubscribe>flex-mojos-unsubscribe@googlegroups.com</unsubscribe>
+			<post>flex-mojos@googlegroups.com</post>
+			<archive>http://groups.google.com/group/flex-mojos/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<configuration>
+					<targetJdk>1.5</targetJdk>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-plugin-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jxr-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>taglist-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>changelog-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</reporting>
+
+	<modules>
+		<module>utils</module>
+
+		<module>compiler-mojo</module>
+		<module>encrypter-mojo</module>
+		<module>asdoc-mojo</module>
+		<module>source-mojo</module>
+		<module>generator-mojo</module>
+
+		<!-- cant release
+			<module>flex-mojo-IT</module> -->
+	</modules>
+
+</project>
