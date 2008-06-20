@@ -2,11 +2,11 @@
 #labels Featured
 see [http://blog.flex-mojos.info/2008/03/29/more-them-a-hello-world/]
 
-You will need to install your datavisualization libraries like this:
+* You will need to install your datavisualization libraries like this: *
 
 `mvn install:install-file -DgroupId=com.adobe.flex.sdk -DartifactId=datavisualization -Dversion=3.0.0.477 -Dpackaging=swc -Dfile=<path to flex sdk>/sdks/3.0.0/frameworks/libs/datavisualization.swc`
 
-{{{mvn install:install-file -DgroupId=com.adobe.flex.sdk -DartifactId=datavisualization -Dversion=3.0.0.477 -Dclassifier=en_US -Dpackaging=resource-bundle -Dfile=<path to flex sdk>/sdks/3.0.0/frameworks/locale/en_US/datavisualization_rb.swc}}}
+{{{mvn install:install-file -DgroupId=com.adobe.flex.sdk -DartifactId=datavisualization -Dversion=3.0.0.477 -Dclassifier=en_US -Dpackaging=swc -Dfile=<path to flex sdk>/sdks/3.0.0/frameworks/locale/en_US/datavisualization_rb.swc}}}
 
 {{{
 <?xml version="1.0" encoding="UTF-8"?>
