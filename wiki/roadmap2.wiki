@@ -1,5 +1,7 @@
 #summary Roadmap for flex-mojos 2
 
+~~Checked~~ items are already done.
+
 = Introduction =
 
 The next flex-mojos version focus will be stability, documentation and standardization.
@@ -8,15 +10,14 @@ The next flex-mojos version focus will be stability, documentation and standardi
 = Goals =
 == Refactories ==
   * Refactory all package names to info.flexmojos.MOJO_NAME
-  * Change all groupIds to info.flex-mojos
+  * ~~ Change all groupIds to info.flex-mojos ~~
   * Change all artifactIds to maven-MOJO_NAME-plugin
   * Pass on PMD
-  * Pass on checkstyle
   * Add equivalence relation on every parameter. Like this:
 This is equivalent to using the <code>actionscript-file-encoding</code> option of the mxmlc or compc compilers.
   * Improve maven-doc on parameters who only have equivalence relation
   * Add expression to parameters
-  * Add samples on complex parameters
+  * ~~ Add samples on complex parameters ~~
   * Improve error messages (MojoExecutionException), add fix suggestion where is possible and move to resource-bundle files (need see maven standard for this)
 
 == New features ==
@@ -26,6 +27,6 @@ This is equivalent to using the <code>actionscript-file-encoding</code> option o
 
 
 == New mojos ==
-  * Generation of optimised RSLs (http://code.google.com/p/flex-mojos/issues/detail?id=34)
-  * archetypes mojos
-  * AIR mojos with all ´ADT´ functionality to package an air application
+  * ~~ Generation of optimised RSLs (http://code.google.com/p/flex-mojos/issues/detail?id=34) ~~
+  * ~~ archetypes mojos ~~
+  * AIR mojo with ´ADT´ functionality to package an air application
