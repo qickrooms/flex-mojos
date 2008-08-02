@@ -1,5 +1,5 @@
+#summary Tutorial for building a simple Hello World Flex application with flex-mojos
 #labels Featured
-#Tutorial for building a simple Hello World Flex application with flex-mojos
 = Introduction =
 
 This is a simple tutorial for building your first Hello World Flex application using just flex-mojos and Maven.
