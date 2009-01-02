@@ -1,0 +1,9 @@
+#summary Frequently Asked Questions for Flex-mojos
+#labels Featured
+
+Q. I get an error when trying to build my project: java.lang.OutOfMemoryError: Java heap space
+
+A. You need to set the environment variable MAVEN_OPTS to a larger Java heap space value, usually a number between 512 and 1024 MB works the best. For example:
+
+{{{MAVEN_OPTS=-Xmx512m}}}
+
