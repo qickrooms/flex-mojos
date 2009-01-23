@@ -59,7 +59,7 @@ Say that I've installed my Flex Builder Professional SDK as version 3.2-fb3, the
 
 }}}
 
-If you still see the watermark, then either the license key is invalid, or you do not have the correct license.jar on the maven classpath when it compiler the Flex project. You can run: {{{mvn install -X}}} to show the detailed maven output, and you should see something like this in your build (with or without dashes is fine):
+If you still see the watermark, then either the license key is invalid, or you do not have the correct license.jar on the maven classpath when it compiles the Flex project. You can run: {{{mvn install -X}}} to show the detailed maven output, and you should see something like this in your build (with or without dashes is fine):
 {{{
 -licenses.license flexbuilder3 nnnnnnnnnnnnnnnnnnnnnnnn
 }}} 
