@@ -1,5 +1,6 @@
 #summary Frequently Asked Questions for Flex-mojos
 #labels Featured
+----
 
 Q. I get an error when trying to build my project: java.lang.OutOfMemoryError: Java heap space
 
@@ -65,7 +66,7 @@ If you still see the watermark, then either the license key is invalid, or you d
 }}} 
 and
 {{{
-[DEBUG]     com.adobe.flex.compiler:license:jar:3.2-fb3:runtime 
+[DEBUG]     com.adobe.flex.compiler:license:jar:3.2-fb3:compile 
 (selected for compile) 
 }}}
 or
@@ -73,3 +74,5 @@ or
 [DEBUG]   (f) pluginArtifacts = [........, 
 com.adobe.flex.compiler:license:jar:3.2-fb3:compile,......
 }}}
+
+----
