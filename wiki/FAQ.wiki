@@ -7,3 +7,69 @@ A. You need to set the environment variable MAVEN_OPTS to a larger Java heap spa
 
 {{{MAVEN_OPTS=-Xmx512m}}}
 
+----
+
+Q. How do I get rid of the watermark on my datavisualization charts or the automation trial limit?
+
+A. You need to have a valid Flex Builder 3 Professional license key. If you run flex-mojos on a machine that has Flex Builder 3 Professional installed, it will automatically detect your license key. If not, then you need to put your license key in your pom like this (the dashes are optional):
+{{{
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>info.flex-mojos</groupId>
+            <artifactId>flex-compiler-mojo</artifactId>
+            <configuration>
+              <licenses>
+                <flexbuilder3>nnnn-nnnn-nnnn-nnnn-nnnn-nnnn</flexbuilder3>
+              </licenses>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+}}}
+
+Now, you need to install a version of the Flex SDK that supports licensing, which is either the non-MPL Adobe SDK or the SDK from you Flex Builder installation. Use the install-mojo to install this locally or deploy to one of your repositories. Then specify this SDK you installed as the version that flex-mojos should use to build. To clarify, flex-mojos only comes with the free MPL version of the Flex SDK and doesn't support licensing. You must use the install-mojo to install an SDK that supports licensing.
+
+Say that I've installed my Flex Builder Professional SDK as version 3.2-fb3, then my pom will look like this:
+{{{
+		<plugins>
+			<plugin>
+				<groupId>info.flex-mojos</groupId>
+				<artifactId>flex-compiler-mojo</artifactId>
+				<version>${flex-mojos.version}</version>
+				<extensions>true</extensions>
+				<dependencies>
+					<dependency>
+						<groupId>com.adobe.flex</groupId>
+						<artifactId>compiler</artifactId>
+						<version>3.2-fb3</version>
+						<type>pom</type>
+					</dependency>
+
+.......
+
+	<dependencies>
+<!-- Flex SDK dependencies -->
+		<dependency>
+			<groupId>com.adobe.flex.framework</groupId>
+			<artifactId>flex-framework</artifactId>
+			<version>3.2-fb3</version>
+			<type>pom</type>
+		</dependency>
+
+}}}
+
+If you still see the watermark, then either the license key is invalid, or you do not have the correct license.jar on the maven classpath when it compiler the Flex project. You can run: {{{mvn install -X}}} to show the detailed maven output, and you should see something like this in your build (with or without dashes is fine):
+{{{
+-licenses.license flexbuilder3 nnnnnnnnnnnnnnnnnnnnnnnn
+}}} 
+and
+{{{
+[DEBUG]     com.adobe.flex.compiler:license:jar:3.2-fb3:runtime 
+(selected for compile) 
+}}}
+or
+{{{
+[DEBUG]   (f) pluginArtifacts = [........, 
+com.adobe.flex.compiler:license:jar:3.2-fb3:compile,......
+}}}
