@@ -1,8 +1,0 @@
-#summary tips on integrating flex-mojos with Flex Builder
-#labels Featured,FlexBuilder
-
-Integrating a flex-mojos maven project with Flex Builder can be done in a variety of ways.  There are nicer solutions in progress but not yet completed (a plugin similar to eclipse:eclipse which will generate Flex Builder projects, as well as integration with m2eclipse).
-
-Until the nicer solutions are working, there other ways. Here is a thread with a variety of solutions:
-
-http://groups.google.com/group/flex-mojos/browse_thread/thread/e6fa8592e6c1b24d
